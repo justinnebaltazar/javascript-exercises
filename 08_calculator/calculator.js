@@ -21,8 +21,14 @@ const power = function(a, b) {
     return a ** b; 
 };
 
-const factorial = function() {
-	
+const factorial = function(a) {
+  
+  if (a === 0) return 1; 
+  let product = 1; 
+  for(let i = a; i > 0; i--) {
+    product = product * i;
+  }
+  return product;
 };
 
 // Do not edit below this line
